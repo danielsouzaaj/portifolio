@@ -1,0 +1,90 @@
+.footer {
+  background: #000000;
+}
+
+.footer div.container {
+  padding: 120px 20px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 1.125rem;
+  line-height: 1.33;
+  color: #cccccc;
+  justify-self: flex-start;
+}
+
+.footer-contato {
+  justify-self: flex-end;
+}
+
+.footer-contato li {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-contato li a {
+  color: #ffffff;
+}
+
+.footer-contato li::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-contato .email::before {
+  background-image: url(../img/email.svg);
+}
+
+.footer-contato .computador::before {
+  background-image: url(../img/computador.svg);
+}
+
+.footer-contato .link::before {
+  background-image: url(../img/link.svg);
+}
+
+.footer-copy {
+  font-size: 1.2rem;
+  color: #8f8f8f;
+}
+
+.footer-copy span {
+  color: #9a0303;
+}
+
+@media (width <= 750px) {
+  .footer div.container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contato {
+    justify-self: flex-start;
+  }
+
+  .footer-texto {
+    font-size: 1rem;
+    max-width: 50ch;
+  }
+
+  .footer-contato li {
+    font-size: 1rem;
+  }
+
+  .footer-copy {
+    font-size: 1rem;
+  }
+}
