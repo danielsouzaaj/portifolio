@@ -1,0 +1,125 @@
+.introducao {
+  padding: 80px 20px 40px;
+}
+
+.introducao div {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 88px;
+  background-image: url(../img/deco-header.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: -19px;
+  left: -19px;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.introducao p::before {
+  content: "";
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/location.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (width <= 700px) {
+  .introducao h1 {
+    font-size: 3.5rem;
+    line-height: 1.209;
+  }
+
+  .introducao div {
+    max-width: 430px;
+  }
+
+  .introducao p {
+    font-size: 1.25rem;
+  }
+
+  .introducao p::before {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (width <= 500px) {
+  .introducao h1 {
+    font-size: 3rem;
+    line-height: 1.209;
+  }
+
+  .introducao div {
+    max-width: 360px;
+  }
+
+  .introducao p {
+    font-size: 1.125rem;
+  }
+
+  .introducao p::before {
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (width <= 425px) {
+  .introducao h1 {
+    font-size: 2.75rem;
+    line-height: 1.209;
+  }
+
+  .introducao div {
+    max-width: 320px;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+    gap: 4px;
+  }
+
+  .introducao p::before {
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (width <= 360px) {
+  .introducao h1 {
+    font-size: 2.25rem;
+    line-height: 1.209;
+  }
+
+  .introducao div {
+    max-width: 270px;
+  }
+}
